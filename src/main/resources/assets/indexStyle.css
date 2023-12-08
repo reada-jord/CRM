@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('FONTS/Poppins-Bold.ttf');
+}
+
+
+.parent{
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 15;
+}
+
+.primary-background{
+    -fx-background-color: #F7F7F1;
+}
+
+.login{
+    -fx-font-size: 20;
+}
+
+.sideBarButton {
+    -fx-background-color: #F7F7F1;
+    -fx-text-fill: #241625;
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 15;
+    -fx-border-radius: 4;
+    -fx-border-color: #5f8575;
+}
+
+.sideBarButton:selected:focused {
+
+}

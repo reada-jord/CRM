@@ -1,0 +1,13 @@
+CREATE DATABASE IF NOT EXIST mgttaxi;
+use mgttaxi;
+
+
+DROP TABLE IF EXISTS Client;
+
+CREATE TABLE client(
+ID VARCHAR(20) PRIMARY KEY,
+Nom VARCHAR(36),
+Password VARCHAR(36)
+);
+
+INSERT INTO client VALUES("JC608624", "zakaria","zakaria");

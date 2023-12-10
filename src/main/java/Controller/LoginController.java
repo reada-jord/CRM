@@ -4,7 +4,6 @@ import com.example.gestql.Index;
 import javafx.fxml.FXML;
 import javafx.scene.Node;
 import javafx.scene.control.*;
-import javafx.scene.layout.HBox;
 import javafx.stage.Stage;
 import javafx.stage.Window;
 import Models.SharedConnection;
@@ -53,11 +52,7 @@ public class LoginController {
                 return;
             }
 
-            else if (loginPasswordField.getText().isEmpty()){
-                showAlert(Alert.AlertType.ERROR, owner, "Erreur!",
-                        "Veuillez insérer le mot de passe!");
-                return;
-            }
+
 
             String userNameT = loginUsernameTextField.getText();
             String passwordT = loginPasswordField.getText();
@@ -72,6 +67,7 @@ public class LoginController {
                 Stage login  = (Stage) source.getScene().getWindow();
                 login.close();
             } catch(SQLException | IOException Ex){
+                System.out.println(Ex.getMessage());
                 showAlert(Alert.AlertType.ERROR, owner, "ERREUR!", "LES DONNEES SONT INCORRECTES!");
             }
         }

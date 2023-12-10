@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 
 public class SharedConnection {
-    private static final String DATABASE_URL = "jdbc:mysql://localhost/MgtTaxi";
+    private static final String DATABASE_URL = "jdbc:mariadb://localhost:3306/mgttaxi";
     private static String userName;
     private static String password;
 

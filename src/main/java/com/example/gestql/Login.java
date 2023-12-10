@@ -13,7 +13,7 @@ public class Login extends Application {
 
     @Override
     public void start(Stage primaryStage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("dash.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Login.class.getResource("Login.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 1000, 600);
         primaryStage.setTitle("Login!");
         primaryStage.setScene(scene);

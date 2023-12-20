@@ -1,8 +1,6 @@
 package Models;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
-import java.sql.SQLException;
+import java.sql.*;
 
 public class SharedConnection {
     private static final String DATABASE_URL = "jdbc:mariadb://localhost:3306/mgttaxi";
@@ -16,7 +14,12 @@ public class SharedConnection {
 
     public static Connection createConnection() throws SQLException {
         Connection con = DriverManager.getConnection(DATABASE_URL, userName, password);
+
         return con;
     }
+
+
+
+
 
 }

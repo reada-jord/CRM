@@ -14,7 +14,6 @@ public class SharedConnection {
 
     public static Connection createConnection() throws SQLException {
         Connection con = DriverManager.getConnection(DATABASE_URL, userName, password);
-
         return con;
     }
 

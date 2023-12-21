@@ -7,8 +7,6 @@ module com.example.gestql {
     requires org.kordamp.bootstrapfx.core;
     requires java.sql;
     requires java.desktop;
-    requires GMapsFX;
-    requires javafx.web;
     requires jdk.jsobject;
 
     opens com.example.gestql to javafx.fxml;

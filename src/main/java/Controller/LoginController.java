@@ -8,7 +8,6 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import Models.SharedConnection;
 import java.io.IOException;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import javafx.event.ActionEvent;
 
@@ -53,8 +52,6 @@ public class LoginController {
                 return;
             }
 
-
-
             String userNameT = loginUsernameTextField.getText();
             String passwordT = loginPasswordField.getText();
 
@@ -62,8 +59,6 @@ public class LoginController {
 
             try {
                 sharedConnection.createConnection();
-
-
                 Index in = new Index();
                 in.start(new Stage());
                 Node source = (Node) E.getSource();

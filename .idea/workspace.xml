@@ -5,16 +5,83 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efcd483-628a-4d40-b6e5-eb7162878e9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MgtTaxi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/MgtTaxi.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_lynden_GMapsFX_2_12_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_23.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardClientController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Driver.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Taxi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestql/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gestql/Dashboard.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestql/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gestql/Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestql/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gestql/Login.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/mapp.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/Icons/mapp.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/dash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/dash.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/10757.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/bicycle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/cab_1126592.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/driv1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/driv2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/driv3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/driv4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/fav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/fleche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/icons8-route-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/kickscooter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/logodash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/logoutbutt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/mapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/notification.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/scooter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/taxi2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/indexStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/indexStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/dash.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/dashboardClient.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/DashboardClientController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Driver.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Taxi.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/10757.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/bicycle.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/cab_1126592.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/card.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/driv1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/driv2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/driv3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/driv4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/email.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/fav.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/fleche.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/heart.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/icons8-route-50.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/kickscooter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/logodash.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/logoutbutt.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/mapp.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/notification.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/password.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/scooter.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/taxi2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/indexStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/indexStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/map.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/dash.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/dashboardClient.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/module-info.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,15 +123,16 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/java/com/example/gestql&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/lib&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/resources/assets&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.537931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;advanced.settings&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\MGTTAX\src\main\resources\assets" />
       <recent name="C:\Users\PC\Desktop\MGTTAX\lib" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -119,6 +187,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.gestql.Index" />
+      <module name="MgtTaxi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.gestql.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Login" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.Login" />
       <module name="MgtTaxi" />
@@ -151,6 +232,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Index" />
         <item itemvalue="Application.GoogleMapsWebViewWithMarker" />
         <item itemvalue="Application.GoogleMapsWebView" />
         <item itemvalue="Application.Dashboard" />

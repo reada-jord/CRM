@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="1200.0" style="-fx-background-color: white;" stylesheets="@../../../assets/indexStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IndexController">
+    <children>
+        <AnchorPane fx:id="sideBar" layoutX="7.0" layoutY="9.0" minWidth="-Infinity" prefHeight="379.0" prefWidth="170.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+                <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="10.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Icons/crm.png" />
+                    </image>
+                </ImageView>
+                <VBox alignment="TOP_CENTER" layoutX="5.0" layoutY="192.0" spacing="10.0">
+                    <children>
+                        <ToggleButton fx:id="DashboardButton" alignment="CENTER_LEFT" graphicTextGap="5.0" mnemonicParsing="false" onMouseClicked="#setDashboard" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Dashboard" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/dashboard.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <opaqueInsets>
+                                <Insets />
+                            </opaqueInsets>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="employesButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#setEmployes" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Employés" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/employe.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="departementsButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#setClient" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Clients" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/client.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="vehiculesButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#setAchats" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Achats" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/achat.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="machinesButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="235.0" mnemonicParsing="false" onMouseClicked="#setProduits" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Produits" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/produit.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="vachesButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="190.0" mnemonicParsing="false" onMouseClicked="#setCommandes" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Commandes" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/order.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                        <ToggleButton fx:id="productionButton" alignment="CENTER_LEFT" layoutX="15.0" layoutY="280.0" mnemonicParsing="false" onMouseClicked="#setStock" prefHeight="35.0" prefWidth="160.0" styleClass="sideBarButton" text="Stock" textFill="#5f8575">
+                            <font>
+                                <Font name="System Bold" size="14.0" />
+                            </font>
+                            <graphic>
+                                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../assets/Icons/stock.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <cursor>
+                                <Cursor fx:constant="HAND" />
+                            </cursor>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </ToggleButton>
+                    </children></VBox>
+                <Button fx:id="closeButton" alignment="CENTER" cancelButton="true" layoutX="70.0" layoutY="576.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#closeStage" prefHeight="30.0" prefWidth="30.0" style="-fx-background-color: #b52121; -fx-background-radius: 30;" textFill="WHITE">
+                    <graphic>
+                        <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../../../assets/Icons/shutdown.png" />
+                            </image>
+                        </ImageView>
+                    </graphic>
+                    <cursor>
+                        <Cursor fx:constant="HAND" />
+                    </cursor>
+                </Button>
+            </children></AnchorPane>
+        <AnchorPane fx:id="viewToDisplay" layoutX="190.0" layoutY="10.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="190.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+            <children>
+            </children></AnchorPane>
+    </children>
+</AnchorPane>

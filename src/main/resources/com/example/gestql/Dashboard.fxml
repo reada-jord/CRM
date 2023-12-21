@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1000.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
+   <center>
+      <VBox prefHeight="600.0" prefWidth="753.0" styleClass="second-background" stylesheets="@styles.css" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefHeight="9.0" prefWidth="670.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="35.0" prefWidth="68.0" stylesheets="@styles.css" text="MGT" textFill="#686868">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BASELINE_LEFT" contentDisplay="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="35.0" prefWidth="50.0" stylesheets="@styles.css" text="Taxi" textFill="#686868">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="30.0" top="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="74.0" prefWidth="546.0" spacing="20.0">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="61.0" prefWidth="200.0" spacing="10.0" styleClass="card2" stylesheets="@styles.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="55.0" prefWidth="96.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="26.0" prefWidth="67.0" stylesheets="@styles.css" text="Book trips" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="30.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="42.0" styleClass="size1" stylesheets="@styles.css" text="1200" textFill="#241625">
+                                 <font>
+                                    <Font name="System Bold Italic" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="63.0" text="+ 32.23 %" textFill="#18cc33">
+                           <HBox.margin>
+                              <Insets right="8.0" top="23.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin></HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="20.0" layoutY="10.0" prefHeight="61.0" prefWidth="200.0" spacing="10.0" styleClass="card2" stylesheets="@styles.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="45.0" prefWidth="95.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="137.0" stylesheets="@styles.css" text="Cancelled trips" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="42.0" styleClass="size1" stylesheets="@styles.css" text="1200" textFill="#241625">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="63.0" text="+ 32.23 %" textFill="#18cc33">
+                           <HBox.margin>
+                              <Insets right="8.0" top="23.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="240.0" layoutY="10.0" prefHeight="61.0" prefWidth="200.0" spacing="10.0" styleClass="card2" stylesheets="@styles.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="45.0" prefWidth="87.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="81.0" stylesheets="@styles.css" text="Available Cars" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="42.0" styleClass="size1" stylesheets="@styles.css" text="1200" textFill="#241625">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="63.0" text="+ 32.23 %" textFill="#18cc33">
+                           <HBox.margin>
+                              <Insets right="8.0" top="23.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" layoutX="460.0" layoutY="10.0" prefHeight="61.0" prefWidth="200.0" spacing="10.0" styleClass="card2" stylesheets="@styles.css">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="45.0" prefWidth="87.0">
+                           <children>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="23.0" prefWidth="81.0" stylesheets="@styles.css" text="Available Cars" textFill="#686868">
+                                 <font>
+                                    <Font name="System Bold" size="11.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets right="10.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="20.0" prefWidth="42.0" styleClass="size1" stylesheets="@styles.css" text="1200" textFill="#241625">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <VBox.margin>
+                                    <Insets right="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <Label alignment="BOTTOM_CENTER" prefHeight="18.0" prefWidth="63.0" text="+ 32.23 %" textFill="#18cc33">
+                           <HBox.margin>
+                              <Insets right="8.0" top="23.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="215.0" prefWidth="562.0" stylesheets="@styles.css">
+               <VBox.margin>
+                  <Insets left="30.0" right="30.0" top="15.0" />
+               </VBox.margin>
+               <children>
+
+                  <StackedBarChart fx:id="sb" layoutX="346.0" prefHeight="209.0" prefWidth="917.0" title="15 Dérniers jours">
+                     <xAxis>
+                        <CategoryAxis side="BOTTOM" />
+                     </xAxis>
+                     <yAxis>
+                        <NumberAxis side="LEFT" />
+                     </yAxis>
+                  </StackedBarChart>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="234.0" prefWidth="700.0">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <children>
+                  <HBox prefHeight="216.0" prefWidth="664.0">
+                     <children>
+                        <ImageView fitHeight="244.0" fitWidth="397.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../assets/Icons/mapp.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children></HBox>
+         </children>
+      </VBox>
+   </center>
+</BorderPane>

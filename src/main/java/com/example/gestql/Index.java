@@ -12,7 +12,7 @@ public class Index extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader indexLoader = new FXMLLoader(Index.class.getResource("dash.fxml"));
+        FXMLLoader indexLoader = new FXMLLoader(Index.class.getResource("Index.fxml"));
         Scene scene = new Scene(indexLoader.load());
         stage.setResizable(false);
         stage.initStyle(StageStyle.UNDECORATED);

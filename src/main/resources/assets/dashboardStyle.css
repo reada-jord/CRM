@@ -1,0 +1,44 @@
+@font-face {
+    font-family: 'Poppins';
+    font-weight: bold;
+    src: url('FONTS/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Poppins';
+    font-weight: regular;
+    src: url('FONTS/Poppins-Light.ttf');
+}
+
+
+.poppinsBold{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+}
+
+.poppinsLight{
+    -fx-font-family: 'Poppins Regular';
+}
+
+.default-color0.chart-bar {
+    -fx-bar-fill: #004225;
+    }
+.default-color1.chart-bar {
+    -fx-bar-fill: #77dd77;
+    }
+.default-color2.chart-bar {
+    -fx-bar-fill: #29ab87;
+    }
+
+.default-color0.chart-pie {
+      -fx-pie-color: #004225;
+   }
+.default-color1.chart-pie {
+      -fx-pie-color: #77dd77;
+   }
+.default-color2.chart-pie {
+      -fx-pie-color: #29ab87;
+   }
+.default-color3.chart-pie {
+      -fx-pie-color: #d1e231;
+   }

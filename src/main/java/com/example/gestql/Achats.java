@@ -1,16 +1,13 @@
 package com.example.gestql;
 
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
 import javafx.stage.Stage;
+
 import java.io.IOException;
 
-public class Dashboard extends Application {
+public class Achats extends Application {
     @Override
-
-    public void start(Stage stage) throws IOException {
-
+    public void start(Stage primaryStage) throws IOException {
     }
 
     public static void main(String[] args) {

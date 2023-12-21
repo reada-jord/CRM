@@ -1,7 +1,7 @@
 package Controller;
 
 import Models.*;
-import com.example.gestql.Dashboard;
+import com.example.gestql.*;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -38,7 +38,7 @@ public class IndexController implements Initializable {
 
     @FXML
     private void setClient(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Client.class.getResource("Departements.fxml"));
+        node = FXMLLoader.load(Clients.class.getResource("Departements.fxml"));
         loadView(node);
     }
 
@@ -62,7 +62,7 @@ public class IndexController implements Initializable {
 
     @FXML
     private void setStock(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Stock.class.getResource("Produits.fxml"));
+        node = FXMLLoader.load(Stocks.class.getResource("Produits.fxml"));
         loadView(node);
     }
 

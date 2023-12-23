@@ -5,17 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efcd483-628a-4d40-b6e5-eb7162878e9e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/MgtTaxi.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Achats.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Achat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Commandes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Commande.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Employes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Employe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Produits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Produit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Stock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Stock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestql/Dashboard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/gestql/Dashboard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/MgtTaxi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/MgtTaxi.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +83,7 @@
   <component name="RunManager" selected="Application.Login">
     <configuration name="Dashboard" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.Dashboard" />
-      <module name="MgtTaxi" />
+      <module name="crm" />
       <option name="VM_PARAMETERS" value="--add-opens javafx.graphics/com.sun.javafx.sg.prism=ALL-UNNAMED " />
       <extension name="coverage">
         <pattern>
@@ -97,7 +97,7 @@
     </configuration>
     <configuration name="GoogleMapsWebView" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.GoogleMapsWebView" />
-      <module name="MgtTaxi" />
+      <module name="crm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.gestql.*" />
@@ -110,7 +110,7 @@
     </configuration>
     <configuration name="GoogleMapsWebViewWithMarker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.GoogleMapsWebViewWithMarker" />
-      <module name="MgtTaxi" />
+      <module name="crm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.gestql.*" />
@@ -123,7 +123,7 @@
     </configuration>
     <configuration name="Index" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.Index" />
-      <module name="MgtTaxi" />
+      <module name="crm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.example.gestql.*" />
@@ -136,7 +136,7 @@
     </configuration>
     <configuration name="Login" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.gestql.Login" />
-      <module name="MgtTaxi" />
+      <module name="crm" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Controller.*" />

@@ -6,12 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="MgtTaxi" />
+        <module name="crm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="crm" target="17" />
       <module name="gestQl" target="1.5" />
-      <module name="MgtTaxi" target="17" />
     </bytecodeTargetLevel>
   </component>
 </project>

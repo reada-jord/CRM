@@ -8,6 +8,9 @@ import javafx.stage.Stage;
 import javafx.stage.Window;
 import Models.SharedConnection;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 import javafx.event.ActionEvent;
 
@@ -55,15 +58,22 @@ public class LoginController {
             String userNameT = loginUsernameTextField.getText();
             String passwordT = loginPasswordField.getText();
 
-            SharedConnection sharedConnection = new SharedConnection(userNameT, passwordT);
+            String query = "SELECT * FROM admin where username = ? AND password = ? ";
 
             try {
-                sharedConnection.createConnection();
-                Index in = new Index();
-                in.start(new Stage());
-                Node source = (Node) E.getSource();
-                Stage login  = (Stage) source.getScene().getWindow();
-                login.close();
+                Connection con = SharedConnection.createConnection();
+                PreparedStatement stmt = con.prepareStatement(query);
+                stmt.setString(1, userNameT);
+                stmt.setString(2,passwordT);
+                ResultSet res = stmt.executeQuery();
+
+                if (res.next()) {
+                    Index in = new Index();
+                    in.start(new Stage());
+                    Node source = (Node) E.getSource();
+                    Stage login = (Stage) source.getScene().getWindow();
+                    login.close();
+                }
             } catch(SQLException | IOException Ex){
                 System.out.println(Ex.getMessage());
                 showAlert(Alert.AlertType.ERROR, owner, "ERREUR!", "LES DONNEES SONT INCORRECTES!");

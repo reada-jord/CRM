@@ -38,7 +38,7 @@ public class IndexController implements Initializable {
 
     @FXML
     private void setClient(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Clients.class.getResource("Departements.fxml"));
+        node = FXMLLoader.load(Clients.class.getResource("Clients.fxml"));
         loadView(node);
     }
 

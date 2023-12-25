@@ -5,17 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efcd483-628a-4d40-b6e5-eb7162878e9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/MgtTaxi.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Employes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Employe.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/MgtTaxi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/TaIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Clients.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/MgtTaxi.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/TaIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,8 +31,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="FxmlFile" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -166,10 +172,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Dashboard" />
         <item itemvalue="Application.Index" />
         <item itemvalue="Application.GoogleMapsWebViewWithMarker" />
         <item itemvalue="Application.GoogleMapsWebView" />
-        <item itemvalue="Application.Dashboard" />
         <item itemvalue="JAR Application.mysql-connector-j-8.0.31.jar" />
       </list>
     </recent_temporary>

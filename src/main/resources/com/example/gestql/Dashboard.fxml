@@ -87,7 +87,7 @@
                               <Font name="Poppins Regular" size="15.0" />
                            </font>
                         </Label>
-                        <Label fx:id="totalVaches" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
+                        <Label fx:id="totalClient" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
@@ -118,7 +118,7 @@
                               <Font name="Poppins Regular" size="15.0" />
                            </font>
                         </Label>
-                        <Label fx:id="totalLitres" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
+                        <Label fx:id="totalProduit" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
                            <font>
                               <Font name="System Bold" size="24.0" />
                            </font>
@@ -162,7 +162,7 @@
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="vachesToVacc" styleClass="poppinsBold" textFill="#c32828">
+                  <Label fx:id="ContactDisp" styleClass="poppinsBold" textFill="#c32828">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>
@@ -170,7 +170,7 @@
                         <Insets left="30.0" />
                      </padding>
                   </Label>
-                  <Label layoutX="166.0" layoutY="16.0" prefWidth="130.0" styleClass="poppinsBold" text="CLIENTS">
+                  <Label layoutX="166.0" layoutY="16.0" prefWidth="130.0" styleClass="poppinsBold" text="CONTACTS">
                      <font>
                         <Font name="System Bold" size="17.0" />
                      </font>
@@ -221,7 +221,7 @@
                         <Font name="System Bold" size="17.0" />
                      </font>
                   </Label>
-                  <Label fx:id="noMachines" alignment="CENTER" contentDisplay="CENTER" styleClass="poppinsBold" textFill="#c32828">
+                  <Label fx:id="noComm" alignment="CENTER" contentDisplay="CENTER" styleClass="poppinsBold" textFill="#c32828">
                      <font>
                         <Font name="System Bold" size="18.0" />
                      </font>

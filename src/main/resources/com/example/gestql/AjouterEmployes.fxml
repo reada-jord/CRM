@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="hh" prefHeight="470.0" prefWidth="439.0" style="-fx-background-color: #ebebeb" stylesheets="@../../../assets/fontStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AjouterEmployeController">
+    <children>
+        <Label layoutX="74.0" layoutY="31.0" styleClass="poppinsBold" text="AJOUTER UN NOUVEU EMPLOYE" AnchorPane.topAnchor="30.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="Nom" layoutX="67.0" layoutY="105.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="304.0" promptText="Nom" style="-fx-background-radius: 30;" AnchorPane.topAnchor="105.0" />
+        <TextField fx:id="Prenom" layoutX="66.0" layoutY="161.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="304.0" promptText="Prénom" style="-fx-background-radius: 30;" />
+        <TextField fx:id="Telephone" layoutX="69.0" layoutY="217.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="35.0" prefWidth="304.0" promptText="N° Téléphone" style="-fx-background-radius: 30;" />
+        <Button fx:id="btnAjouter" alignment="CENTER" layoutX="151.0" layoutY="382.0" maxHeight="-Infinity" minHeight="-Infinity" mnemonicParsing="false" onAction="#Ajouter" onMouseClicked="#AjouterBtn" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #E5C51D; -fx-background-radius: 30;" styleClass="poppinsBold" text="Ajouter" textFill="WHITE" wrapText="true" AnchorPane.bottomAnchor="30.0">
+            <padding>
+                <Insets left="20.0" right="20.0" />
+            </padding>
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Icons/add20.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <ChoiceBox fx:id="depa" layoutX="74.0" layoutY="284.0" prefHeight="35.0" prefWidth="304.0" />
+        <ChoiceBox fx:id="Type" layoutX="74.0" layoutY="341.0" prefHeight="35.0" prefWidth="304.0" />
+    </children>
+</AnchorPane>

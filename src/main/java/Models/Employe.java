@@ -1,86 +1,126 @@
 package Models;
 
-public class Employe {
-    private String nom;
-    private String prenom;
-    private String adresse;
-    private String numeroTelephone;
-    private String email;
-    private String poste;
-    private double salaire;
+import javafx.beans.property.*;
 
-    public Employe(String nom, String prenom, String adresse, String numeroTelephone, String email, String poste, double salaire) {
-        this.nom = nom;
-        this.prenom = prenom;
-        this.adresse = adresse;
-        this.numeroTelephone = numeroTelephone;
-        this.email = email;
-        this.poste = poste;
-        this.salaire = salaire;
+public class Employe {
+
+    private final IntegerProperty id = new SimpleIntegerProperty();
+    private final StringProperty nom = new SimpleStringProperty();
+    private final StringProperty prenom = new SimpleStringProperty();
+    private final StringProperty numeroTelephone = new SimpleStringProperty();
+    private final StringProperty email = new SimpleStringProperty();
+    private final StringProperty poste = new SimpleStringProperty();
+    private final DoubleProperty salaire = new SimpleDoubleProperty();
+    private final IntegerProperty absent = new SimpleIntegerProperty();
+
+    public Employe(int id, String nom, String prenom, String numeroTelephone, String email, String poste, double salaire, int absent) {
+        setId(id);
+        setNom(nom);
+        setPrenom(prenom);
+        setNumeroTelephone(numeroTelephone);
+        setEmail(email);
+        setPoste(poste);
+        setSalaire(salaire);
+        setAbsent(absent);
+    }
+
+    public Employe() {
+    }
+
+    public final int getId() {
+        return id.get();
+    }
+
+    public final void setId(int id) {
+        this.id.set(id);
+    }
+
+    public IntegerProperty idProperty() {
+        return id;
     }
 
     public String getNom() {
+        return nom.get();
+    }
+
+    public StringProperty nomProperty() {
         return nom;
     }
 
     public void setNom(String nom) {
-        this.nom = nom;
+        this.nom.set(nom);
     }
 
     public String getPrenom() {
+        return prenom.get();
+    }
+
+    public StringProperty prenomProperty() {
         return prenom;
     }
 
     public void setPrenom(String prenom) {
-        this.prenom = prenom;
+        this.prenom.set(prenom);
     }
 
-    public String getAdresse() {
-        return adresse;
-    }
-
-    public void setAdresse(String adresse) {
-        this.adresse = adresse;
-    }
 
     public String getNumeroTelephone() {
+        return numeroTelephone.get();
+    }
+
+    public StringProperty numeroTelephoneProperty() {
         return numeroTelephone;
     }
 
     public void setNumeroTelephone(String numeroTelephone) {
-        this.numeroTelephone = numeroTelephone;
+        this.numeroTelephone.set(numeroTelephone);
     }
 
     public String getEmail() {
+        return email.get();
+    }
+
+    public StringProperty emailProperty() {
         return email;
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email.set(email);
     }
 
     public String getPoste() {
+        return poste.get();
+    }
+
+    public StringProperty posteProperty() {
         return poste;
     }
 
     public void setPoste(String poste) {
-        this.poste = poste;
+        this.poste.set(poste);
     }
 
     public double getSalaire() {
+        return salaire.get();
+    }
+
+    public DoubleProperty salaireProperty() {
         return salaire;
     }
 
     public void setSalaire(double salaire) {
-        this.salaire = salaire;
+        this.salaire.set(salaire);
     }
 
-
-    public void attribuerPoste(String nouveauPoste) {
-        this.poste = nouveauPoste;
+    public int getAbsent() {
+        return absent.get();
     }
 
-    public void ajusterSalaire(double nouveauSalaire) {
-        this.salaire = nouveauSalaire;
+    public IntegerProperty absentProperty() {
+        return absent;
+    }
+
+    public void setAbsent(int absent) {
+        this.absent.set(absent);
     }
 }

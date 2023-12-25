@@ -13,7 +13,6 @@
 .poppinsBold{
     -fx-font-family: 'Poppins';
     -fx-font-weight: bold;
-    -fx-font-size: 24;
 }
 
 .poppinsLight{

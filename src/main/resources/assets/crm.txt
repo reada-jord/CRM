@@ -2,18 +2,26 @@ CREATE DATABASE IF NOT EXIST crm;
 use crm;
 
 
-DROP TABLE IF EXISTS Client;
-CREATE TABLE Client (
+DROP TABLE IF EXISTS admin;
+CREATE TABLE admin (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255),
+    password VARCHAR(255),
+);
+
+DROP TABLE IF EXISTS client;
+CREATE TABLE client (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255),
     prenom VARCHAR(255),
     adresse VARCHAR(255),
     numeroTelephone VARCHAR(15),
-    email VARCHAR(255)
+    email VARCHAR(255),
+    etat INT
 );
 
-DROP TABLE IF EXISTS Employee;
-CREATE TABLE Employee (
+DROP TABLE IF EXISTS employee;
+CREATE TABLE employee (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255),
     prenom VARCHAR(255),
@@ -21,11 +29,12 @@ CREATE TABLE Employee (
     numeroTelephone VARCHAR(15),
     email VARCHAR(255),
     poste VARCHAR(255),
-    salaire DOUBLE
+    salaire DOUBLE,
+    absent INT
 );
 
-DROP TABLE IF EXISTS Produit;
-CREATE TABLE Produit (
+DROP TABLE IF EXISTS produit;
+CREATE TABLE produit (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nom VARCHAR(255),
     description TEXT,
@@ -33,8 +42,8 @@ CREATE TABLE Produit (
     stock INT
 );
 
-DROP TABLE IF EXISTS Achat;
-CREATE TABLE Achat (
+DROP TABLE IF EXISTS achat;
+CREATE TABLE achat (
     id INT AUTO_INCREMENT PRIMARY KEY,
     produit_id INT,
     quantite INT,
@@ -42,8 +51,8 @@ CREATE TABLE Achat (
     FOREIGN KEY (produit_id) REFERENCES Produit(id)
 );
 
-DROP TABLE IF EXISTS Commande;
-CREATE TABLE Commande (
+DROP TABLE IF EXISTS commande;
+CREATE TABLE commande (
     id INT AUTO_INCREMENT PRIMARY KEY,
     client_id INT,
     dateCommande DATE,
@@ -52,8 +61,8 @@ CREATE TABLE Commande (
     FOREIGN KEY (client_id) REFERENCES Client(id)
 );
 
-DROP TABLE IF EXISTS Stock;
-CREATE TABLE Stock (
+DROP TABLE IF EXISTS stock;
+CREATE TABLE stock (
     id INT AUTO_INCREMENT PRIMARY KEY,
     produit_id INT,
     quantiteDisponible INT,
@@ -62,3 +71,15 @@ CREATE TABLE Stock (
 );
 
 
+INSERT INTO admin (id, username , password) VALUES
+(1, 'admin', 'admin');
+
+INSERT INTO employee (nom, prenom, adresse, numeroTelephone, email, poste, salaire, absent) VALUES
+('Doe', 'John', '123 Rue de la Poste', '123456789', 'john.doe@example.com', 'Manager', 50000.00, 0),
+('Smith', 'Jane', '456 Avenue des Fleurs', '987654321', 'jane.smith@example.com', 'Développeur', 60000.00, 1),
+('Martin', 'Jean', '789 Boulevard Principal', '654321987', 'jean.martin@example.com', 'Analyste', 55000.00, 0);
+
+INSERT INTO client (nom, prenom, adresse, numeroTelephone, email, etat) VALUES
+('Dupont', 'Pierre', '321 Rue du Commerce', '111222333', 'pierre.dupont@example.com', 0),
+('Leclerc', 'Marie', '654 Avenue de la République', '444555666', 'marie.leclerc@example.com', 1),
+('Lefevre', 'Louis', '987 Boulevard Industriel', '777888999', 'louis.lefevre@example.com', 0);

@@ -5,23 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efcd483-628a-4d40-b6e5-eb7162878e9e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Employes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AjouterEmployeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AjouterEmployeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EmployeeController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Employe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Employe.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/Icons/TaIcon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Clients.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Dashboard.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/Icons/TaIcon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/AjouterEmployes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/AjouterEmployes.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Dashboard.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,20 +46,20 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/java/com/example/gestql&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/resources/assets&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.537931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_directory_selection": "C:/Users/PC/Desktop/MGTTAX/src/main/java/com/example/gestql",
+    "last_opened_file_path": "C:/Users/PC/Desktop/MGTTAX/src/main/resources/assets",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.537931",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Desktop\MGTTAX\src\main\resources\assets" />

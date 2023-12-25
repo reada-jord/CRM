@@ -59,17 +59,22 @@ public class EmployeeController implements Initializable {
     public void find(MouseEvent mouseEvent) {
     }
 
+    // ****************************************************************************
     public void AjouterButton(MouseEvent mouseEvent) throws IOException {
         AjouterEmployes ajEm = new AjouterEmployes();
         ajEm.start(new Stage());
     }
 
+    // ****************************************************************************
     public void export(MouseEvent mouseEvent) {
     }
+
+    // ****************************************************************************
 
     public void ModifierButton(MouseEvent mouseEvent) {
     }
 
+    // *************************************************************************
     public void deleteButton(MouseEvent mouseEvent) {
         Employe em = (Employe) table.getSelectionModel().getSelectedItem();
         int id = em.idProperty().getValue();

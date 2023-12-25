@@ -66,7 +66,6 @@ public class LoginController {
                 stmt.setString(1, userNameT);
                 stmt.setString(2,passwordT);
                 ResultSet res = stmt.executeQuery();
-
                 if (res.next()) {
                     Index in = new Index();
                     in.start(new Stage());

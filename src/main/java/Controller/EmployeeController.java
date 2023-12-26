@@ -2,6 +2,7 @@ package Controller;
 
 
 import com.example.gestql.AjouterEmployes;
+import com.example.gestql.ModifierEmploye;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -56,8 +57,53 @@ public class EmployeeController implements Initializable {
     private TableColumn<Employe, Integer> AbsentCol;
 
 
+    @FXML
+    private TextField search;
     public void find(MouseEvent mouseEvent) {
+        String id = search.getText().toString();
+        date.setText(formatter.format(curDate).toUpperCase());
+        ObservableList<Employe> data = FXCollections.observableArrayList();
+        Connection cnx = null;
+        for(int i=0; i<table.getItems().size();i++){
+            table.getItems().clear();
+        }
+        try {
+            cnx = SharedConnection.createConnection();
+            Statement stmt = cnx.createStatement();
+            ResultSet rs = stmt.executeQuery("SELECT * FROM employee WHERE ID LIKE '"+id+"%' OR nom LIKE '"+id+"%';");
+
+            while (rs.next()) {
+                data.add(new Employe(
+                        rs.getInt("Id"),
+                        rs.getString("Nom"),
+                        rs.getString("Prenom"),
+                        rs.getString("NumeroTelephone"),
+                        rs.getString("Email"),
+                        rs.getString("Poste"),
+                        rs.getDouble("Salaire"),
+                        rs.getInt("Absent")));
+            }
+
+        } catch (SQLException e) {
+            throw new RuntimeException(e);
+        }
+
+        IdCol.setCellValueFactory(new PropertyValueFactory<>("Id"));
+        NomCol.setCellValueFactory(new PropertyValueFactory<>("Nom"));
+        PrenomCol.setCellValueFactory(new PropertyValueFactory<>("Prenom"));
+        TelephoneCol.setCellValueFactory(new PropertyValueFactory<>("NumeroTelephone"));
+        EmailCol.setCellValueFactory(new PropertyValueFactory<>("Email"));
+        PosteCol.setCellValueFactory(new PropertyValueFactory<>("Poste"));
+        SalaireCol.setCellValueFactory(new PropertyValueFactory<>("Salaire"));
+        AbsentCol.setCellValueFactory(new PropertyValueFactory<>("Absent"));
+
+        table.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        table.setItems(data);
     }
+
+
+
+
 
     // ****************************************************************************
     public void AjouterButton(MouseEvent mouseEvent) throws IOException {
@@ -71,7 +117,9 @@ public class EmployeeController implements Initializable {
 
     // ****************************************************************************
 
-    public void ModifierButton(MouseEvent mouseEvent) {
+    public void ModifierButton(MouseEvent mouseEvent) throws IOException {
+        ModifierEmploye MoEm = new ModifierEmploye();
+        MoEm.start(new Stage());
     }
 
     // *************************************************************************

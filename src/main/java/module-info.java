@@ -8,6 +8,8 @@ module com.example.gestql {
     requires java.sql;
     requires java.desktop;
     requires jdk.jsobject;
+    requires org.apache.poi.ooxml;
+
 
     opens com.example.gestql to javafx.fxml;
     exports com.example.gestql;

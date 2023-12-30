@@ -39,7 +39,8 @@ CREATE TABLE produit (
     nom VARCHAR(255),
     description TEXT,
     prix DOUBLE,
-    stock INT
+    stock INT,
+    date_production DATE
 );
 
 DROP TABLE IF EXISTS achat;
@@ -83,3 +84,36 @@ INSERT INTO client (nom, prenom, adresse, numeroTelephone, email, etat) VALUES
 ('Dupont', 'Pierre', '321 Rue du Commerce', '111222333', 'pierre.dupont@example.com', 0),
 ('Leclerc', 'Marie', '654 Avenue de la République', '444555666', 'marie.leclerc@example.com', 1),
 ('Lefevre', 'Louis', '987 Boulevard Industriel', '777888999', 'louis.lefevre@example.com', 0);
+
+
+INSERT INTO `produit` (`id`, `nom`, `description`, `prix`, `stock`, `date_production`) VALUES
+(1, 'Phone', 'Portable', 12, 3, '2023-12-17'),
+(2, 'Computer', 'Desktop', 10, 4, '2023-12-02'),
+(3, 'Laptops', 'Portable', 14, 6, '2023-12-05');
+(4, 'Tablet', 'Portable', 8, 5, '2023-12-10'),
+(5, 'Smartwatch', 'Wearable', 6, 8, '2023-11-28'),
+(6, 'Printer', 'Office', 18, 2, '2023-12-15'),
+(7, 'Camera', 'Digital', 15, 7, '2023-11-30'),
+(8, 'Headphones', 'Audio', 20, 4, '2023-12-08'),
+(9, 'Smartphone', 'High-End', 25, 10, '2023-12-20'),
+(10, 'Tablet PC', 'Convertible', 18, 6, '2023-12-08'),
+(11, 'Gaming Laptop', 'Powerful', 30, 3, '2023-12-12'),
+(12, 'Wireless Mouse', 'Gaming', 12, 15, '2023-12-01'),
+(13, 'External Hard Drive', 'Storage', 40, 5, '2023-11-25'),
+(14, '4K TV', 'Smart TV', 800, 2, '2023-12-18'),
+(15, 'Wireless Keyboard', 'Bluetooth', 30, 8, '2023-12-03'),
+(16, 'Graphic Card', 'High Performance', 600, 5, '2023-11-29'),
+(17, 'VR Headset', 'Virtual Reality', 200, 3, '2023-12-14'),
+(18, 'Digital Camera', 'Professional', 1200, 1, '2023-12-07'),
+(19, 'Bluetooth Speaker', 'Portable', 50, 12, '2023-11-26'),
+(20, 'Fitness Tracker', 'Health', 80, 15, '2023-12-11'),
+(21, 'Smart Thermostat', 'Home Automation', 100, 7, '2023-12-04'),
+(22, 'Coffee Maker', 'Automatic', 60, 10, '2023-11-28'),
+(23, 'Robot Vacuum', 'Smart Home', 250, 4, '2023-12-17'),
+(24, 'Electric Scooter', 'Foldable', 300, 3, '2023-12-10'),
+(25, 'Solar Charger', 'Renewable Energy', 40, 6, '2023-12-02'),
+(26, 'Gaming Console', 'Next-Gen', 500, 2, '2023-12-15'),
+(27, 'Drones', 'Quadcopter', 150, 5, '2023-12-05'),
+(28, 'Wireless Earbuds', 'Noise Cancelling', 120, 8, '2023-12-20'),
+(29, 'Home Security Camera', 'Surveillance', 90, 9, '2023-12-13'),
+(30, '3D Printer', 'DIY', 400, 1, '2023-11-27');

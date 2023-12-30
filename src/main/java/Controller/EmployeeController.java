@@ -16,6 +16,9 @@ import javafx.stage.Stage;
 import Models.Employe;
 import Models.SharedConnection;
 
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
 
 import java.io.*;
 import java.net.URL;
@@ -56,7 +59,6 @@ public class EmployeeController implements Initializable {
     @FXML
     private TableColumn<Employe, Integer> AbsentCol;
 
-
     @FXML
     private TextField search;
     public void find(MouseEvent mouseEvent) {
@@ -70,7 +72,7 @@ public class EmployeeController implements Initializable {
         try {
             cnx = SharedConnection.createConnection();
             Statement stmt = cnx.createStatement();
-            ResultSet rs = stmt.executeQuery("SELECT * FROM employee WHERE ID LIKE '"+id+"%' OR nom LIKE '"+id+"%';");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM employee WHERE ID LIKE '"+id+"%' OR nom LIKE '"+id+"%' OR prenom LIKE '"+id+"%';");
 
             while (rs.next()) {
                 data.add(new Employe(
@@ -113,6 +115,59 @@ public class EmployeeController implements Initializable {
 
     // ****************************************************************************
     public void export(MouseEvent mouseEvent) {
+        try {
+            // Create a new workbook
+            Workbook workbook = new XSSFWorkbook();
+
+            // Create a sheet in the workbook
+            Sheet sheet = workbook.createSheet("Employee Data");
+
+            // Create header row
+            Row headerRow = sheet.createRow(0);
+            headerRow.createCell(0).setCellValue("ID");
+            headerRow.createCell(1).setCellValue("Nom");
+            headerRow.createCell(2).setCellValue("Prenom");
+            headerRow.createCell(3).setCellValue("NumeroTelephone");
+            headerRow.createCell(4).setCellValue("Email");
+            headerRow.createCell(5).setCellValue("Poste");
+            headerRow.createCell(6).setCellValue("Salaire");
+            headerRow.createCell(7).setCellValue("Absent");
+
+            // Populate data rows
+            ObservableList<Employe> data = (ObservableList<Employe>) table.getItems();
+            for (int i = 0; i < data.size(); i++) {
+                Employe employee = data.get(i);
+                Row dataRow = sheet.createRow(i + 1);
+                dataRow.createCell(0).setCellValue(employee.getId());
+                dataRow.createCell(1).setCellValue(employee.getNom());
+                dataRow.createCell(2).setCellValue(employee.getPrenom());
+                dataRow.createCell(3).setCellValue(employee.getNumeroTelephone());
+                dataRow.createCell(4).setCellValue(employee.getEmail());
+                dataRow.createCell(5).setCellValue(employee.getPoste());
+                dataRow.createCell(6).setCellValue(employee.getSalaire());
+                dataRow.createCell(7).setCellValue(employee.getAbsent());
+            }
+
+            // Save the workbook to a file
+            try (FileOutputStream fileOut = new FileOutputStream("EmployeeData.xlsx")) {
+                workbook.write(fileOut);
+            }
+
+            // Close the workbook
+            workbook.close();
+
+            // Provide feedback to the user (optional)
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            alert.setTitle("Export Successful");
+            alert.setHeaderText(null);
+            alert.setContentText("Employee data exported to Excel successfully!");
+            alert.showAndWait();
+
+        } catch (IOException e) {
+            System.out.println(e.getMessage());
+            e.printStackTrace();
+
+        }
     }
 
     // ****************************************************************************

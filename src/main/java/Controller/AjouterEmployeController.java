@@ -16,10 +16,13 @@ import java.net.URL;
 import java.sql.Connection;
 import java.sql.Statement;
 import java.util.ResourceBundle;
-import java.util.concurrent.ThreadLocalRandom;
+
 
 public class AjouterEmployeController implements Initializable {
 
+
+    @FXML
+    private TextField Id;
     @FXML
     private TextField Nom;
 
@@ -41,6 +44,8 @@ public class AjouterEmployeController implements Initializable {
 
 
     public void AjouterBtn(MouseEvent mouseEvent) {
+
+        int id = Integer.parseInt(Id.getText());
         String nom = Nom.getText();
         String prenom = Prenom.getText();
         String telephone = Telephone.getText();
@@ -50,8 +55,7 @@ public class AjouterEmployeController implements Initializable {
         int abs = Abs.getValue();
         int absent = getAbs(abs);
         System.out.print(absent);
-        int int_random = ThreadLocalRandom.current().nextInt();
-        int id = Integer.parseInt(String.valueOf(int_random));
+
 
         try {
             Connection cnx = SharedConnection.createConnection();
@@ -85,4 +89,6 @@ public class AjouterEmployeController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         Abs.getItems().addAll(0,1);
     }
+
+
 }

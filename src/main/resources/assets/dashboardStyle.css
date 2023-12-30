@@ -21,24 +21,24 @@
 }
 
 .default-color0.chart-bar {
-    -fx-bar-fill: #004225;
+    -fx-bar-fill: #DAA520;
     }
 .default-color1.chart-bar {
-    -fx-bar-fill: #77dd77;
+    -fx-bar-fill: #E5C51D;
     }
 .default-color2.chart-bar {
-    -fx-bar-fill: #29ab87;
+    -fx-bar-fill: #FBEC5D;
     }
 
 .default-color0.chart-pie {
-      -fx-pie-color: #004225;
+      -fx-pie-color: #FFEA00;
    }
 .default-color1.chart-pie {
-      -fx-pie-color: #77dd77;
+      -fx-pie-color: #E5C51D;
    }
 .default-color2.chart-pie {
-      -fx-pie-color: #29ab87;
+      -fx-pie-color: #FBEC5D;
    }
 .default-color3.chart-pie {
-      -fx-pie-color: #d1e231;
+      -fx-pie-color: #DAA520;
    }

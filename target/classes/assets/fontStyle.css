@@ -19,3 +19,8 @@
     -fx-font-family: 'Poppins Regular';
 }
 
+.poppinsBoldcrm{
+    -fx-font-family: 'Poppins';
+    -fx-font-weight: bold;
+    -fx-font-size: 40;
+}

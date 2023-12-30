@@ -5,7 +5,7 @@ import java.sql.*;
 public class SharedConnection {
     private static final String DATABASE_URL = "jdbc:mariadb://localhost:3306/crm";
     private static String userName = "root";
-    private static String password = "zaratapa";
+    private static String password = "";
 
     public SharedConnection(String userName, String password){
         this.userName = userName;

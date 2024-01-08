@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="470.0" prefWidth="439.0" style="-fx-background-color: #ebebeb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierAchatController">
+    <children>
+        <Label layoutX="109.0" layoutY="14.0" styleClass="poppinsBold" text="MODIFIER UN ACHAT" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
+            <font>
+                <Font name="System Bold" size="18.0" />
+            </font></Label>
+        <TextField fx:id="EditAchatNom" layoutX="71.0" layoutY="137.0" prefHeight="35.0" prefWidth="304.0" promptText="NomAchat" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="137.0" />
+        <TextField fx:id="EditProduitId" layoutX="71.0" layoutY="192.0" prefHeight="35.0" prefWidth="304.0" promptText="Proudit Id" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="192.0" />
+        <TextField fx:id="EditQuantite" layoutX="71.0" layoutY="244.0" prefHeight="35.0" prefWidth="304.0" promptText="Quantite" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="244.0" />
+        <TextField fx:id="EditMontantTotal" layoutX="71.0" layoutY="301.0" prefHeight="35.0" prefWidth="304.0" promptText="Montant Total" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="301.0" />
+        <Button layoutX="151.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#EditButton" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #4682B4; -fx-background-radius: 30;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="9.0">
+            <font>
+                <Font name="System Bold" size="14.0" />
+            </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <graphic>
+                <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@../../../assets/Icons/edit20.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <TextField fx:id="EditId" layoutX="71.0" layoutY="51.0" prefHeight="35.0" prefWidth="304.0" promptText="Id" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" />
+        <Label layoutX="149.0" layoutY="93.0" text="Modifier les informations :" />
+        <CheckBox fx:id="EditEtat" layoutX="188.0" layoutY="395.0" mnemonicParsing="false" text="Present" />
+    </children>
+</AnchorPane>

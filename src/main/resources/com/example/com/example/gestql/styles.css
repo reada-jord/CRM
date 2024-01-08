@@ -1,0 +1,117 @@
+/* 
+    Created on : Feb 22, 2020, 2:39:34 PM
+    Author     : Admin
+*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url('FONTS/Poppins-Bold.ttf');
+}
+
+
+.parent{
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 15;
+}
+
+.primary-background{
+    -fx-background-color : #E5C51D;
+}
+
+.transparent{
+    -fx-background-color : rgba(0,0,0,0);
+}
+.search-background{
+    -fx-background-color: #F7F7F1;
+    -fx-border-radius: 50;
+    -fx-background-radius: 50;
+    -fx-font-family: 'Poppins';
+    -fx-font-size: 15;
+}
+
+.white-background{
+    -fx-background-color: #fff;
+}
+
+.second-background{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #F7F7F1;
+}
+
+.third-background{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #EBEBE6;
+}
+
+.button{
+    -fx-font-family: 'Poppins';
+    -fx-background-color : rgba(0,0,0,0);
+    -fx-border-radius: 50;
+    -fx-border-color: #241625;
+}
+
+.card1{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #E5C51D;
+    -fx-background-radius: 50;
+    -fx-text-fill: #241625
+}
+
+.card2{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #F7F7F1;
+    -fx-border-radius: 50;
+    -fx-background-radius: 20;
+    -fx-border-color: #939191;
+}
+
+.size1{
+ -fx-font-family: 'Poppins';
+  -fx-font-size: 15;
+}
+
+.card3{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #C2AF96;
+    -fx-background-radius: 20;
+}
+
+.card4{
+    -fx-font-family: 'Poppins';
+    -fx-background-color: #bd414157;
+    -fx-background-radius: 20;
+}
+
+.button-next{
+    -fx-font-family: 'Poppins';
+    -fx-background-color : #fff;
+    -fx-background-radius : 20;
+    -fx-border-radius: 40;
+    -fx-border-color: #241625;
+}
+
+.button-next2{
+-fx-font-family: 'Poppins';
+    -fx-background-color : #E5C51D;
+    -fx-background-radius : 20;
+    -fx-border-color: #241625;
+}
+
+.button-next3{
+-fx-font-family: 'Poppins';
+    -fx-background-color : #ffffff;
+    -fx-background-radius : 20;
+    -fx-border-color: #241625;
+}
+
+.button-learn{
+    -fx-font-family: 'Poppins';
+    -fx-text-fill: #241625;
+    -fx-background-color : #ffffff;
+    -fx-background-radius : 20;
+    -fx-border-color: #241625;
+}
+
+.web-view {
+    -fx-background-color: transparent;
+}

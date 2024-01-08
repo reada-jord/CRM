@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7efcd483-628a-4d40-b6e5-eb7162878e9e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_2_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_2_0_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/AjouterEmployeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/AjouterEmployeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/DashboardController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/EmployeeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/IndexController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Achat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Achat.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Commande.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/Commande.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Models/SharedConnection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Models/Stock.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/gestql/Stocks.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/crm.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/dashboardStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/dashboardStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/assets/fontStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/AjouterEmployes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/AjouterEmployes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Login.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/DashboardController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/SharedConnection.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/assets/fontStyle.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Login.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Login.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/com/example/gestql/Index.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Controller/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/Models/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Models/Client.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/gestql/Index.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/gestql/Index.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,30 +43,36 @@
     <option name="generalSettings">
       <MavenGeneralSettings>
         <option name="mavenHome" value="Use Maven wrapper" />
-        <option name="useMavenConfig" value="true" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 6
+}]]></component>
   <component name="ProjectId" id="2WszOxTpzWF9HjnqE5ezyJb27gF" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/java/com/example/gestql&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/PC/Desktop/MGTTAX/src/main/resources/assets&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.537931&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.Login.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "master",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "C:/Users/PC/Desktop/crm/src/main/java/com/example/gestql",
+    "last_opened_file_path": "C:/Users/PC/Desktop/MGTTAX/src/main/resources/assets",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.537931",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Desktop\MGTTAX\src\main\resources\assets" />
@@ -181,6 +182,14 @@
         <item itemvalue="JAR Application.mysql-connector-j-8.0.31.jar" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.9-corretto-17.0.9-f644763e9732-ebaef533" />
+        <option value="jdk-21.0.1-openjdk-21.0.1-8336523bb0d9-657b72ed" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">

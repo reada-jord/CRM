@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.chart.StackedBarChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="630.0" prefWidth="1000.0" style="-fx-background-color: white;" stylesheets="@../../../assets/dashboardStyle.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.DashboardController">
+   <children>
+      <AnchorPane layoutX="190.0" layoutY="10.0" prefHeight="60.0" prefWidth="998.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="25.0" layoutY="13.0" styleClass="poppinsBold" text="DASHBOARD" textAlignment="CENTER" textFill="#646863" AnchorPane.bottomAnchor="12.0" AnchorPane.leftAnchor="30.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font name="System Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="707.0" layoutY="13.0" styleClass="poppinsLight" textAlignment="CENTER" textFill="#646863" AnchorPane.bottomAnchor="12.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="12.0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <GridPane hgap="10.0" layoutX="190.0" layoutY="95.0" prefHeight="82.0" prefWidth="998.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="85.0">
+         <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/Icons/employeeDashboard.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="110.0" prefWidth="245.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="TOTAL DES EMPLOYÉS :" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="Poppins Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalEmployes" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="JUSQU'A CETTE DATE" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="200.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" GridPane.columnIndex="1">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/Icons/clientDashboard.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="110.0" prefWidth="245.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="TOTAL DES CLIENTS :" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="Poppins Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalClient" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="JUSQU'A CETTE DATE" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="110.0" prefWidth="333.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" AnchorPane.rightAnchor="190.0" GridPane.columnIndex="2">
+               <children>
+                  <ImageView fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../assets/Icons/produit.png" />
+                     </image>
+                  </ImageView>
+                  <VBox alignment="CENTER" prefHeight="110.0" prefWidth="245.0">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="LITRES PRODUITS :" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="Poppins Regular" size="15.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="totalProduit" alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="50.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsBold" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font name="System Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="10.0" layoutY="65.0" prefHeight="30.0" prefWidth="245.0" styleClass="poppinsLight" text="AUJOURD'HUI" textAlignment="CENTER" textFill="#646863">
+                           <font>
+                              <Font size="15.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets left="15.0" right="15.0" />
+               </padding>
+            </HBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </GridPane>
+      <AnchorPane layoutX="190.0" layoutY="200.0" prefHeight="307.0" prefWidth="1000.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="190.0">
+         <children>
+            <PieChart fx:id="pieChart" labelsVisible="false" layoutX="-1.0" prefHeight="297.0" prefWidth="319.0" title="Production" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.topAnchor="5.0" />
+            <StackedBarChart fx:id="sb" layoutX="346.0" prefHeight="307.0" prefWidth="655.0" title="15 Dérniers jours" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </StackedBarChart>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="190.0" layoutY="517.0" prefHeight="123.0" prefWidth="448.0" style="-fx-background-radius: 10; -fx-border-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="38.0" prefWidth="375.0" style="-fx-background-color: white; -fx-border-color: #5f8575; -fx-background-radius: 30; -fx-border-radius: 30;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="73.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: #da3535; -fx-background-radius: 30;" styleClass="poppinsBold" text="Disponibles" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="ContactDisp" styleClass="poppinsBold" textFill="#c32828">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Label layoutX="166.0" layoutY="16.0" prefWidth="130.0" styleClass="poppinsBold" text="CONTACTS">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets right="20.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutY="41.0" prefHeight="38.0" prefWidth="375.0" style="-fx-border-color: #5f8575; -fx-border-radius: 30; -fx-background-color: #ebebeb; -fx-background-radius: 30;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="73.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: #5f8575; -fx-background-radius: 30;" styleClass="poppinsBold" text="Absences" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="absentEmp" alignment="CENTER" contentDisplay="CENTER" styleClass="poppinsBold" textFill="#c32828">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Label prefWidth="130.0" styleClass="poppinsBold" text="EMPLOYÉS">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutY="82.0" prefHeight="38.0" prefWidth="375.0" style="-fx-background-color: white; -fx-border-color: #5f8575; -fx-border-radius: 30; -fx-background-radius: 30;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="73.0">
+               <children>
+                  <Label alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="155.0" style="-fx-background-color: #6a4ebf; -fx-background-radius: 30;" styleClass="poppinsBold" text="En Panier" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="noComm" alignment="CENTER" contentDisplay="CENTER" styleClass="poppinsBold" textFill="#c32828">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="30.0" />
+                     </padding>
+                  </Label>
+                  <Label prefHeight="24.0" prefWidth="139.0" styleClass="poppinsBold" text="Commandes">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                     <padding>
+                        <Insets left="10.0" right="10.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="644.0" layoutY="517.0" prefHeight="123.0" prefWidth="619.0" style="-fx-background-color: #ebebeb; -fx-background-radius: 10;" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="11.0" prefHeight="30.0" prefWidth="448.0" styleClass="poppinsLight" text="Selon les prix actuels, les profits de ce mois sont éstimés à" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="11.0" AnchorPane.rightAnchor="160.0" AnchorPane.topAnchor="11.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="47.0" prefHeight="30.0" prefWidth="427.0" styleClass="poppinsLight" text="D'apres la production, les profits du mois dérnier ont été">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="80.0" prefHeight="30.0" prefWidth="310.0" styleClass="poppinsLight" text="Les vos revenus de tous les temps sont">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="avgLastMonth" alignment="CENTER" contentDisplay="CENTER" layoutX="441.0" layoutY="47.0" prefHeight="30.0" prefWidth="155.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="poppinsBold" text="+2443" textFill="#6da457">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="avgAlways" alignment="CENTER" contentDisplay="CENTER" layoutX="321.0" layoutY="80.0" prefHeight="30.0" prefWidth="249.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="poppinsBold" text="-1033" textFill="#ab6161">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+            <Label fx:id="avgThisMonth" alignment="CENTER" contentDisplay="CENTER" layoutX="459.0" layoutY="11.0" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="155.0" style="-fx-background-color: white; -fx-background-radius: 10;" styleClass="poppinsBold" text="± 1059" textAlignment="CENTER" textFill="#364ec6">
+               <font>
+                  <Font size="15.0" />
+               </font>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

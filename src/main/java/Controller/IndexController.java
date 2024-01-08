@@ -44,27 +44,23 @@ public class IndexController implements Initializable {
 
     @FXML
     private void setAchats(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Achats.class.getResource("Vehicules.fxml"));
+        node = FXMLLoader.load(Achats.class.getResource("Achats.fxml"));
         loadView(node);
     }
 
     @FXML
     private void setProduits(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Produits.class.getResource("Machines.fxml"));
+        node = FXMLLoader.load(Produits.class.getResource("Produits.fxml"));
         loadView(node);
     }
 
     @FXML
     private void setCommandes(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Commandes.class.getResource("Vaches.fxml"));
+        node = FXMLLoader.load(Commandes.class.getResource("Commandes.fxml"));
         loadView(node);
     }
 
-    @FXML
-    private void setStock(MouseEvent E) throws IOException {
-        node = FXMLLoader.load(Stocks.class.getResource("Produits.fxml"));
-        loadView(node);
-    }
+
 
 
     @Override

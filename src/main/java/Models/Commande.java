@@ -1,61 +1,91 @@
 package Models;
 
+import javafx.beans.property.*;
+
 import java.util.Date;
-import java.util.List;
 
 public class Commande {
-    private Client client;
-    private List<Produit> produits;
-    private Date dateCommande;
-    private String statut; //
-    private double montantTotal;
 
-    public Commande(Client client, List<Produit> produits, Date dateCommande, String statut, double montantTotal) {
-        this.client = client;
-        this.produits = produits;
-        this.dateCommande = dateCommande;
-        this.statut = statut;
-        this.montantTotal = montantTotal;
+    private final IntegerProperty id = new SimpleIntegerProperty();
+    private final IntegerProperty client = new SimpleIntegerProperty();
+
+    private final ObjectProperty<Date> dateCommande = new SimpleObjectProperty<>();
+    private final StringProperty statut = new SimpleStringProperty();
+    private final IntegerProperty montantTotal = new SimpleIntegerProperty();
+
+
+    public Commande() {
+        // Default constructor
     }
 
-    public Client getClient() {
+
+    public Commande(int id, int client, Date dateCommande, String statut, int montantTotal) {
+        setId(id);
+        setClient(client);
+
+        setDateCommande(dateCommande);
+        setStatut(statut);
+        setMontantTotal(montantTotal);
+    }
+
+    public int getId() {
+        return id.get();
+    }
+
+    public void setId(int id) {
+        this.id.set(id);
+    }
+
+    public IntegerProperty idProperty() {
+        return id;
+    }
+
+    public int getClient() {
+        return client.get();
+    }
+
+    public void setClient(int client) {
+        this.client.set(client);
+    }
+
+    public IntegerProperty clientProperty() {
         return client;
     }
 
-    public void setClient(Client client) {
-        this.client = client;
-    }
-
-    public List<Produit> getProduits() {
-        return produits;
-    }
-
-    public void setProduits(List<Produit> produits) {
-        this.produits = produits;
-    }
 
     public Date getDateCommande() {
-        return dateCommande;
+        return dateCommande.get();
     }
 
     public void setDateCommande(Date dateCommande) {
-        this.dateCommande = dateCommande;
+        this.dateCommande.set(dateCommande);
+    }
+
+    public ObjectProperty<Date> dateCommandeProperty() {
+        return dateCommande;
     }
 
     public String getStatut() {
-        return statut;
+        return statut.get();
     }
 
     public void setStatut(String statut) {
-        this.statut = statut;
+        this.statut.set(statut);
+    }
+
+    public StringProperty statutProperty() {
+        return statut;
     }
 
     public double getMontantTotal() {
+        return montantTotal.get();
+    }
+
+    public void setMontantTotal(int montantTotal) {
+        this.montantTotal.set(montantTotal);
+    }
+
+    public IntegerProperty montantTotalProperty() {
         return montantTotal;
     }
-
-    public void setMontantTotal(double montantTotal) {
-        this.montantTotal = montantTotal;
-    }
-
 }

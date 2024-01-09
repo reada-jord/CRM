@@ -10,16 +10,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="470.0" prefWidth="439.0" style="-fx-background-color: #ebebeb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierAchatController">
+<AnchorPane prefHeight="470.0" prefWidth="439.0" style="-fx-background-color: #ebebeb;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ModifierProduitController">
     <children>
-        <Label layoutX="109.0" layoutY="14.0" styleClass="poppinsBold" text="MODIFIER UN ACHAT" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
+        <Label layoutX="109.0" layoutY="14.0" styleClass="poppinsBold" text="MODIFIER UN PRODUIT" textAlignment="CENTER" AnchorPane.topAnchor="14.0">
             <font>
                 <Font name="System Bold" size="18.0" />
-            </font></Label>
-        <TextField fx:id="EditAchatNom" layoutX="71.0" layoutY="137.0" prefHeight="35.0" prefWidth="304.0" promptText="NomAchat" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="137.0" />
-        <TextField fx:id="EditProduitId" layoutX="71.0" layoutY="192.0" prefHeight="35.0" prefWidth="304.0" promptText="Proudit Id" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="192.0" />
-        <TextField fx:id="EditQuantite" layoutX="71.0" layoutY="244.0" prefHeight="35.0" prefWidth="304.0" promptText="Quantite" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="244.0" />
-        <TextField fx:id="EditMontantTotal" layoutX="71.0" layoutY="301.0" prefHeight="35.0" prefWidth="304.0" promptText="Montant Total" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="301.0" />
+            </font>
+        </Label>
+        <TextField fx:id="EditNom" layoutX="71.0" layoutY="121.0" prefHeight="35.0" prefWidth="304.0" promptText="Nom" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="121.0" />
+        <TextField fx:id="EditDescription" layoutX="71.0" layoutY="164.0" prefHeight="35.0" prefWidth="304.0" promptText="Description" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="164.0" />
+        <TextField fx:id="EditPrix" layoutX="71.0" layoutY="207.0" prefHeight="35.0" prefWidth="304.0" promptText="Prix" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="207.0" />
+        <TextField fx:id="EditStock" layoutX="71.0" layoutY="253.0" prefHeight="35.0" prefWidth="304.0" promptText="Stock" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" AnchorPane.topAnchor="253.0" />
         <Button layoutX="151.0" layoutY="421.0" mnemonicParsing="false" onMouseClicked="#EditButton" prefHeight="40.0" prefWidth="143.0" style="-fx-background-color: #4682B4; -fx-background-radius: 30;" text="Modifier" textFill="WHITE" AnchorPane.bottomAnchor="9.0">
             <font>
                 <Font name="System Bold" size="14.0" />
@@ -37,6 +38,5 @@
         </Button>
         <TextField fx:id="EditId" layoutX="71.0" layoutY="51.0" prefHeight="35.0" prefWidth="304.0" promptText="Id" style="-fx-background-radius: 30;" AnchorPane.leftAnchor="71.0" />
         <Label layoutX="149.0" layoutY="93.0" text="Modifier les informations :" />
-        <CheckBox fx:id="EditEtat" layoutX="188.0" layoutY="395.0" mnemonicParsing="false" text="Present" />
     </children>
 </AnchorPane>

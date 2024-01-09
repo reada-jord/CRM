@@ -60,6 +60,12 @@ public class IndexController implements Initializable {
         loadView(node);
     }
 
+    @FXML
+    public void setListePro(MouseEvent mouseEvent) throws IOException{
+        node = FXMLLoader.load(Commandes.class.getResource("ListeProduits.fxml"));
+        loadView(node);
+    }
+
 
 
 
@@ -83,4 +89,6 @@ public class IndexController implements Initializable {
         Stage stage = (Stage) closeButton.getScene().getWindow();
         stage.close();
     }
+
+
 }

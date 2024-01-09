@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/crm.iml" filepath="$PROJECT_DIR$/.idea/crm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/gestQl.iml" filepath="$PROJECT_DIR$/gestQl.iml" />
     </modules>
   </component>
 </project>

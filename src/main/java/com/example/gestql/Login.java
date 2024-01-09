@@ -19,8 +19,6 @@ public class Login extends Application {
             primaryStage.setTitle("Login!");
             primaryStage.setScene(scene);
             primaryStage.show();
-
-
     }
 
 
